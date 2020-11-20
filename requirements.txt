@@ -4,5 +4,5 @@ scikit-learn==0.22.1
 matplotlib>=1.4.3
 pandas>=0.19
 streamlit
-plotly.express 
-wordcloud 
+plotly_express
+wordcloud==1.7.0 
