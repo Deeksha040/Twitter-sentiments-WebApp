@@ -59,6 +59,8 @@ if len(choice) >0:
     choice_data = data[data.airline.isin(choice)]
     fig_0 = px.histogram(choice_data, x='airline', y='airline_sentiment', histfunc='count', color='airline_sentiment', facet_col = 'airline_sentiment', labels={'airline_sentiment':'tweets'}, height=600, width=800)
     st.plotly_chart(fig_0)
+    
+st.set_option('deprecation.showPyplotGlobalUse', False)    
 
 st.sidebar.header("Word Cloud")
 word_sentiment = st.sidebar.radio('Display word cloud for which sentiment?', ('positive', 'negative', 'neutral'))
